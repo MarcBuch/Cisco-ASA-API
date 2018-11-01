@@ -1,0 +1,20 @@
+{
+  "sourceService": {
+    "kind": "NetworkProtocol",
+    "value": "ip"
+  },
+    "destinationService": {
+    "kind": "NetworkProtocol",
+    "value": "ip"
+  },
+  "destinationAddress": {
+    "kind": "IPv4Network",
+    "value": "121.1.2.0/24"
+  },
+  "permit": "false",
+  "active": "true",
+  "sourceAddress": {
+    "kind": "IPv4Network",
+    "value": "192.168.1.0/24"
+  }
+}
