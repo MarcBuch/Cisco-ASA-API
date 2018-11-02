@@ -16,14 +16,14 @@ import asa
 
 urllib3.disable_warnings()
 
-IP = '172.16.0.254'
+IP = ''
 URL = 'https://' + IP
 
 #Gets Token from ASA, needs an IP-Address
 def get_X_auth_token(ip):
     token = None
-    username = 'root'
-    password = 'sycor'
+    username = ''
+    password = ''
     #Directory of the ASA Tokenservice
     url = 'https://'+ username + ':' + password + '@' + ip + '/api/tokenservices'
     headers = {'Content-Type':"application/json"}
