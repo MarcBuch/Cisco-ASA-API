@@ -16,6 +16,10 @@ import urllib3
 import json
 import authentication
 import acl
+import importlib
+
+importlib.reload(authentication)
+importlib.reload(acl)
 
 urllib3.disable_warnings()
 
