@@ -25,10 +25,10 @@ token = authentication.Token
 Header = authentication.Header
 
 
-rule_json = json.dumps(acl.ACL_dict)
+rule_json = json.dumps(acl.ACL_dict)                    #Read JSON File
 aclName = 'pyTest'
-acl = asa.add_ext_acl(asa.IP, aclName, rule_json)
+acl = asa.add_ext_acl(asa.IP, aclName, rule_json)       #Upload ACL to ASA
 print(acl)
-ext_acl = asa.get_all_ext_acl(asa.IP)
+ext_acl = asa.get_all_ext_acl(asa.IP)                   #Read all ACL from ASA
 print(ext_acl)
-delete = authentication.del_X_auth_token(token, asa.IP)
+delete = authentication.del_X_auth_token(token, asa.IP) #Delete Authentication Token
